@@ -1,7 +1,13 @@
-version: '3.8'
+version: '3'
 services:
-  backend:
-    container_name: backendHousy
-    image: gilbran/backend:latest
+  frontend:
+    container_name: frontendHousy
+    image: gilbran/frontendfinal:latest
     ports:
       - 3000:3000
+
+  frontend2:
+    container_name: frontendHousy2
+    image: gilbran/frontendfinal:latest
+    ports:
+      - 3002:3000
