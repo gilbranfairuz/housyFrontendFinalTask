@@ -3,11 +3,13 @@ services:
   frontend:
     container_name: frontendHousy
     image: gilbran/frontendfinal:latest
+    stdin_open: true
     ports:
       - 3000:3000
 
   frontend2:
     container_name: frontendHousy2
     image: gilbran/frontendfinal:latest
+    stdin_open: true
     ports:
       - 3002:3000
